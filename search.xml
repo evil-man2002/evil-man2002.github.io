@@ -49,17 +49,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux是如何工作的</title>
-    <url>/2025/01/24/Linux%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>程序设计实践</title>
     <url>/2025/01/24/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/</url>
     <content><![CDATA[]]></content>
@@ -68,6 +57,17 @@
       </categories>
       <tags>
         <tag>程序设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux是如何工作的</title>
+    <url>/2025/01/24/Linux%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
 </search>
