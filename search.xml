@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/01/24/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记</title>
+    <url>/2025/01/24/%E6%97%A5%E8%AE%B0-25-1-23/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="3439504097fe871a55f8d5739da2aee8412cb5372444411ef3720d48b16a1111">4630436162ade97ba2718b7d0c4b3b638ae5cb477d3267bbc373c39fe0d6a18907eae228956da546e8bab77a0ee2b90291a065b44b97d26bea1f71d285113d2f25ca466a92d582bc7d32f4389f1657d1ed136e4ded79d142910be464b6c32d4b17eb5fc13f9419895a60ef16d1fe43b72556d586ff38fc9a437761782e2e4bd5a749e9ea802f4268ae821e8ee73bc8d6099a511d52283fd8e0a16d7a712c52e4f9f9c7a538f21de1d9c70ade3221d7789ae5a0db21c5a05847d91bbfe2c311dd4d6acceb9cabb65709ea91cf98660d063c9b7772d3f4d1696c7357677cd0d6dbbaa28dd4e42650c0e31a8da8f897299654712377cbc7e8f9d95b3a5b55663847a2ffbb5a09fd625e7c1bf2fd1d07709a9f6018c51cd864793d8656f74fb57b63498b1fac8b22f97fd449847c4e665a59702b70db6261fde6f48cf44deb2d69b1776aef4fb3f6c423e48257ae6ea82b01f06c70f1c965201f234ba1bb74eced3f883bd027f916d0d5af90c35a9dfeb0356907eeba925b38ccb99870e37724769397cfb488148a3c4c805344fbc389de70d156db10c90fd019a765caf4a859e157114ae7af2f19c75387790b05165973e30727591f7cfd790f7ff6b3ba2f941527733fe3eec2e25ff1860eb33ee05217c6264a45731840d25c90ebb8bf801b2ffdcaff70c55664cdabaf57b9a57b68686403c17892c40917906461a87f6255489c19d59a7a6df6be68fd308f3d5aa4a19cda662b6b1965431aefff93f7e0301f0af262053c8c1c1b59a8d56be859c516d035f320c8297dd8267884534d9452f372c5687f3af62fc4022c2c48b5403c4396518dac96fc907e20c42a1b307009a4b9796ad3c298e936e7150277b74d070c30cb8eb9e91fd9755ec8089cc517f14fad1312dc928ad312a4032afece0cd98b0f6bafd16769c4307d7b7a6a52ccaaa70dec4dd67576f0f2f383013170c289c76b8e2b3f66b2c91c8639af598b089d1a32a517eb571fc97ef57a758469521ff378a6605923688d9bf6377a7f1b305fd39e2bd5d2662d4dec98da9c8bc8808d1ed06a9fd81c6717ade6278baf6431faba954f1c4250a289fcc3daa7a17ba43677187dfc08a699218326874b891fb5d8d3be09419551a4beba465167828c15a1f665a1f7a2cf1d05f1bbfa72771436aa8bb1cd377d874f54fff07e3ad9005ca8ca3ca2528f6a50c9032835a73ad860b30456efe94291b1431ad59f653e91ff12da9fea15fc7a387998bbe52b57a1cec7746985d17b28c9d39ed9fad348d0a425c7a9</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>日记</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序设计实践</title>
+    <url>/2025/01/24/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>程序设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux是如何工作的</title>
+    <url>/2025/01/24/Linux%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+</search>
