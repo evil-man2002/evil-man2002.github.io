@@ -8,7 +8,7 @@
 
 <p>&emsp;&emsp;<b>关于本学习笔记的介绍:</b></p>
 <p>&emsp;&emsp;本学习笔记按照《Linux是怎样工作的》这本书来记录学习心得，按照原书所分的八个章节进行，内容中涉及到的代码实验部分也会尽可能地复现和记录。本笔记的目的一方面是为了加深学习印象，尽可能地用自己的理解去记录知识，另一方面是为了便于后续的回顾，并敦促自己去学习。</p>
-<p>&emsp;&emsp;当然，学习过程中难免有理解错误的地方，还请有缘看到本笔记的人予以<a href="mailto:&#x77;&#x6a;&#104;&#x5f;&#x35;&#50;&#48;&#x40;&#115;&#x74;&#117;&#46;&#x78;&#105;&#x64;&#x69;&#x61;&#110;&#x2e;&#x65;&#100;&#117;&#46;&#x63;&#x6e;"><font color="red">勘误</font></a>，敬谢！</p>
+<p>&emsp;&emsp;当然，学习过程中难免有理解错误的地方，还请有缘看到本笔记的人予以<a href="mailto:&#x77;&#106;&#x68;&#x5f;&#x35;&#x32;&#48;&#x40;&#115;&#x74;&#117;&#46;&#x78;&#105;&#x64;&#x69;&#x61;&#x6e;&#x2e;&#x65;&#x64;&#117;&#x2e;&#99;&#x6e;"><font color="red">勘误</font></a>，敬谢！</p>
 <h2 id="计算机系统概要"><a href="#计算机系统概要" class="headerlink" title="计算机系统概要"></a>计算机系统概要</h2><h3 id="计算机组成"><a href="#计算机组成" class="headerlink" title="计算机组成"></a>计算机组成</h3><p>首先，可以把计算机大致分为：<b>CPU、内存、外部设备</b>三种结构。外部设备简称为外设，不单单包括键盘、鼠标、显示器这些平时接触比较多的设备，还包括<b>外部存储器、网络适配器</b>这些设备。<span id="more"></span><br>在计算机体系结构中，越靠近CPU的设备，要求的速度和性能就越高，当然造价也越昂贵，这就导致内存、缓存这些靠近CPU的设备的存储规模不能过大（一方面过大会导致计算机的造价昂贵，另一方面会导致速度和性能的下降）否则就会拖累CPU的性能。</p>
 <p align="center"><font color="red">but why?</font></p>
 因为计算机在处理数据的过程中是一个：
@@ -28,6 +28,40 @@
         <tag>Linux</tag>
         <tag>Operationg System</tag>
         <tag>OS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记-25-1-24</title>
+    <url>/2025/01/25/%E6%97%A5%E8%AE%B0-25-1-24/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="b23a29d3d12e565b144c86f512b353d0f44e1a9ca2e7bf63da2aee22dd5966e3">70eb2f456d8389f14dbb42b479e425c95ea3cf3259c7727f5ce4e4130c8be4227e6bf0fb593525197451d9b5e93829f7c3ad81f988453e351f51739ed6a8a29bd90ec418aef1d4c0a9e48988c64bc0ae87a3cc3f05e1cd7b60468959e849af601700e9abd00aed9e3e75033907dbe2e36e1d0fcb7c7428ce1c92e4dc942fe0d09dabd8bd0f64840dfa2fd7612a081a9990bb2d6a9fc9fe3e50f1ede257b8aec344b13ebe24e956007a7d6a35bab538d376ad650c946e102251f6e74b0cd7711b2274652dd139845830f8dd93b046a506be54613e1f1067472a19548d3dda6fb7c58129fc32da3b3dd794b96f717e31821d5c5ecab45644783e56a775f803797a3808e829c89a1067f1d9eb67f936a6e0404915c54058005be4606b81cb9bf4989482846be4591e18d69cfbe4c42f576d9fa21bc7c809df7ee5dc3951ef5a54c337172f43f2a458c89c9bdc6f9df050c0aed567b15032356b7941b3b381f31f3549e2cdc0104d0010f2f44b4dfd094d4ca1fbff5102962be813e2bf00573c4600124565fae519897ad75bdfe41a13e23c3abc84f60fe6ed7d9da18195f2336429a63237446673f71cc58cbe2d393202bc66b64ee2ca17ef222b63c01c38277fe822b88853f8308db6e4e6b441a734ecad6be46f58d5f8f433208248d1d405753ccd682d55a33306cb7a4447a4dea204ad285f0e5bcbb9d9b20fab7f2d9777b264ca099e991eb0ccec67df567fa255826b8637c77761f1c8e8220c849c1c2709d9c7f242532869ae03d5b0401007aa126d0f9924156cf9169029daa1b4cec597065e2067bf3606955c71ffe3eba97e48070883abf21da896e7a4a22aa37eab564460d32bfc35199a878cde7a1fc88cceaab41a2d69076ddd84067c7d5e47cf263b010e2e0f18c1dfff1a148bf7bbc211d9ca347a673f4deea8549ddab5e4944555f3f9c012339a046bcc321a41927dcc42f1dea7ce6179cf6dc77329f62aaef0affaa9b467429059f93de4238783ae4a7b2599bd48bfae550e1aeb9870211b2d47966426df34f93c049946ab8b1f4e11405aa0e32f0e0256819a2fd6a5372b13e4310d0de5c355cf339537a42eda48f4377a9587d9a85857846900c60f03ad0bbf7f5fdf1be36fde162fc095fcacfdf1eab366e3651ff33bab023682c9953a6da84aef1e89b9ba8b45520c8b9c30e259595d3e2083493d1762090a9a6d7feef41d16bee15ce546789128950ebb921f518031950e3a90aef64495b28424ebad0c8d5087be221cc70e7c35462805fb08024b33468c98f4b73ac2ed6c72a6e82c4f590eb6fef614aa41b974c321a4e89c2ee892eb5b82d5f0808ec891f02665caf2cab81767b87555ef707791236abf5963a1</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>日记</category>
+      </categories>
+      <tags>
+        <tag>bad luck</tag>
+        <tag>salary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序设计实践</title>
+    <url>/2025/01/24/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>程序设计</tag>
       </tags>
   </entry>
   <entry>
@@ -57,29 +91,6 @@
       </tags>
   </entry>
   <entry>
-    <title>日记-25-1-24</title>
-    <url>/2025/01/25/%E6%97%A5%E8%AE%B0-25-1-24/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b23a29d3d12e565b144c86f512b353d0f44e1a9ca2e7bf63da2aee22dd5966e3">70eb2f456d8389f14dbb42b479e425c95ea3cf3259c7727f5ce4e4130c8be4227e6bf0fb593525197451d9b5e93829f7c3ad81f988453e351f51739ed6a8a29bd90ec418aef1d4c0a9e48988c64bc0ae87a3cc3f05e1cd7b60468959e849af601700e9abd00aed9e3e75033907dbe2e36e1d0fcb7c7428ce1c92e4dc942fe0d09dabd8bd0f64840dfa2fd7612a081a9990bb2d6a9fc9fe3e50f1ede257b8aec344b13ebe24e956007a7d6a35bab538d376ad650c946e102251f6e74b0cd7711b2274652dd139845830f8dd93b046a506be54613e1f1067472a19548d3dda6fb7c58129fc32da3b3dd794b96f717e31821d5c5ecab45644783e56a775f803797a3808e829c89a1067f1d9eb67f936a6e0404915c54058005be4606b81cb9bf4989482846be4591e18d69cfbe4c42f576d9fa21bc7c809df7ee5dc3951ef5a54c337172f43f2a458c89c9bdc6f9df050c0aed567b15032356b7941b3b381f31f3549e2cdc0104d0010f2f44b4dfd094d4ca1fbff5102962be813e2bf00573c4600124565fae519897ad75bdfe41a13e23c3abc84f60fe6ed7d9da18195f2336429a63237446673f71cc58cbe2d393202bc66b64ee2ca17ef222b63c01c38277fe822b88853f8308db6e4e6b441a734ecad6be46f58d5f8f433208248d1d405753ccd682d55a33306cb7a4447a4dea204ad285f0e5bcbb9d9b20fab7f2d9777b264ca099e991eb0ccec67df567fa255826b8637c77761f1c8e8220c849c1c2709d9c7f242532869ae03d5b0401007aa126d0f9924156cf9169029daa1b4cec597065e2067bf3606955c71ffe3eba97e48070883abf21da896e7a4a22aa37eab564460d32bfc35199a878cde7a1fc88cceaab41a2d69076ddd84067c7d5e47cf263b010e2e0f18c1dfff1a148bf7bbc211d9ca347a673f4deea8549ddab5e4944555f3f9c012339a046bcc321a41927dcc42f1dea7ce6179cf6dc77329f62aaef0affaa9b467429059f93de4238783ae4a7b2599bd48bfae550e1aeb9870211b2d47966426df34f93c049946ab8b1f4e11405aa0e32f0e0256819a2fd6a5372b13e4310d0de5c355cf339537a42eda48f4377a9587d9a85857846900c60f03ad0bbf7f5fdf1be36fde162fc095fcacfdf1eab366e3651ff33bab023682c9953a6da84aef1e89b9ba8b45520c8b9c30e259595d3e2083493d1762090a9a6d7feef41d16bee15ce546789128950ebb921f518031950e3a90aef64495b28424ebad0c8d5087be221cc70e7c35462805fb08024b33468c98f4b73ac2ed6c72a6e82c4f590eb6fef614aa41b974c321a4e89c2ee892eb5b82d5f0808ec891f02665caf2cab81767b87555ef707791236abf5963a1</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>日记</category>
-      </categories>
-      <tags>
-        <tag>bad luck</tag>
-        <tag>salary</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>日记-25-1-23</title>
     <url>/2025/01/24/%E6%97%A5%E8%AE%B0-25-1-23/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -99,17 +110,6 @@
       </categories>
       <tags>
         <tag>日记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>程序设计实践</title>
-    <url>/2025/01/24/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>程序设计</tag>
       </tags>
   </entry>
 </search>
