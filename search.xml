@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Linux是如何工作的</title>
-    <url>/2025/01/24/Linux%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</url>
-    <content><![CDATA[<h1 id="Linux是怎样工作的"><a href="#Linux是怎样工作的" class="headerlink" title="Linux是怎样工作的"></a><p align="center">Linux是怎样工作的</p></h1><p><b>by. &emsp;&emsp;[日]武内觉&emsp;&emsp;[译]曹栩</b></p>
-<p align="right"><b>——学习笔记</b></p>
-
-<p>&emsp;&emsp;<b>关于本学习笔记的介绍:</b></p>
-<p>&emsp;&emsp;本学习笔记按照《Linux是怎样工作的》这本书来记录学习心得，按照原书所分的八个章节进行，内容中涉及到的代码实验部分也会尽可能地复现和记录。本笔记的目的一方面是为了加深学习印象，尽可能地用自己的理解去记录知识，另一方面是为了便于后续的回顾，并敦促自己去学习。</p>
-<p>&emsp;&emsp;当然，学习过程中难免有理解错误的地方，还请有缘看到本笔记的人予以<a href="mailto:&#x77;&#106;&#x68;&#95;&#53;&#x32;&#48;&#64;&#x73;&#116;&#117;&#46;&#120;&#x69;&#100;&#105;&#97;&#110;&#46;&#101;&#100;&#117;&#46;&#x63;&#x6e;"><font color="red">勘误</font></a>，敬谢！</p>
-<h2 id="计算机系统概要"><a href="#计算机系统概要" class="headerlink" title="计算机系统概要"></a>计算机系统概要</h2><h3 id="计算机组成"><a href="#计算机组成" class="headerlink" title="计算机组成"></a>计算机组成</h3><p>首先，可以把计算机大致分为：<b>CPU、内存、外部设备</b>三种结构。外部设备简称为外设，不单单包括键盘、鼠标、显示器这些平时接触比较多的设备，还包括<b>外部存储器、网络适配器</b>这些设备。<span id="more"></span><br>在计算机体系结构中，越靠近CPU的设备，要求的速度和性能就越高，当然造价也越昂贵，这就导致内存、缓存这些靠近CPU的设备的存储规模不能过大（一方面过大会导致计算机的造价昂贵，另一方面会导致速度和性能的下降）否则就会拖累CPU的性能。</p>
-<p align="center"><font color="red">but why?</font></p>
-因为计算机在处理数据的过程中是一个：
-<p align="center">CPU从内存中取指令、译码、寻址、执行</p>
-<p align="center">把执行的结果重新写入内存</p>
-<p align="center">内存中的数据写入外存</p>
-<p align="center">通过网络适配器发给其他主机或者通过外部设备显示</p>
-循环往复的过程。像上楼梯一样，前面的人不走，后面的人就走不了。计算机的设备也是一样的道理，和CPU交互的设备响应速度如果很慢的话，CPU就要耗费性能去等待，这是不可以容忍的。因为CPU是不会停止工作的，不是说等待就可以把电源关闭停止耗能了，CPU的等待其实是在不断执行空操作nop。我们要充分利用CPU的性能，尽可能地减少这种等待。
-
-<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><p>上面介绍的设备都隶属于硬件，而<b>操作系统</b>（Operating System, OS）属于是计算机的<b>系统软件</b>：可以直接控制硬件设备，同时为应用程序提供运行环境并给用户提供交互（不单是指GUI交互，有的OS没有GUI交互界面，只有CLI命令行交互环境）。</p>
-<h4 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h4><p>进程是计算机资源分配的最小单位。一般一个程序中会有多个进程，</p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Operationg System</tag>
-        <tag>OS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>日记-25-01</title>
     <url>/2025/01/26/%E6%97%A5%E8%AE%B0-25-01/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -52,6 +22,36 @@
         <tag>bad luck</tag>
         <tag>salary</tag>
         <tag>自己在家做饭</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux是如何工作的</title>
+    <url>/2025/01/24/Linux%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</url>
+    <content><![CDATA[<h1 id="Linux是怎样工作的"><a href="#Linux是怎样工作的" class="headerlink" title="Linux是怎样工作的"></a><p align="center">Linux是怎样工作的</p></h1><p><b>by. &emsp;&emsp;[日]武内觉&emsp;&emsp;[译]曹栩</b></p>
+<p align="right"><b>——学习笔记</b></p>
+
+<p>&emsp;&emsp;<b>关于本学习笔记的介绍:</b></p>
+<p>&emsp;&emsp;本学习笔记按照《Linux是怎样工作的》这本书来记录学习心得，按照原书所分的八个章节进行，内容中涉及到的代码实验部分也会尽可能地复现和记录。本笔记的目的一方面是为了加深学习印象，尽可能地用自己的理解去记录知识，另一方面是为了便于后续的回顾，并敦促自己去学习。</p>
+<p>&emsp;&emsp;当然，学习过程中难免有理解错误的地方，还请有缘看到本笔记的人予以<a href="mailto:&#x77;&#x6a;&#x68;&#95;&#53;&#50;&#48;&#64;&#115;&#116;&#117;&#46;&#x78;&#x69;&#x64;&#105;&#x61;&#110;&#x2e;&#101;&#x64;&#117;&#x2e;&#99;&#110;"><font color="red">勘误</font></a>，敬谢！</p>
+<h2 id="计算机系统概要"><a href="#计算机系统概要" class="headerlink" title="计算机系统概要"></a>计算机系统概要</h2><h3 id="计算机组成"><a href="#计算机组成" class="headerlink" title="计算机组成"></a>计算机组成</h3><p>首先，可以把计算机大致分为：<b>CPU、内存、外部设备</b>三种结构。外部设备简称为外设，不单单包括键盘、鼠标、显示器这些平时接触比较多的设备，还包括<b>外部存储器、网络适配器</b>这些设备。<span id="more"></span><br>在计算机体系结构中，越靠近CPU的设备，要求的速度和性能就越高，当然造价也越昂贵，这就导致内存、缓存这些靠近CPU的设备的存储规模不能过大（一方面过大会导致计算机的造价昂贵，另一方面会导致速度和性能的下降）否则就会拖累CPU的性能。</p>
+<p align="center"><font color="red">but why?</font></p>
+因为计算机在处理数据的过程中是一个：
+<p align="center">CPU从内存中取指令、译码、寻址、执行</p>
+<p align="center">把执行的结果重新写入内存</p>
+<p align="center">内存中的数据写入外存</p>
+<p align="center">通过网络适配器发给其他主机或者通过外部设备显示</p>
+循环往复的过程。像上楼梯一样，前面的人不走，后面的人就走不了。计算机的设备也是一样的道理，和CPU交互的设备响应速度如果很慢的话，CPU就要耗费性能去等待，这是不可以容忍的。因为CPU是不会停止工作的，不是说等待就可以把电源关闭停止耗能了，CPU的等待其实是在不断执行空操作nop。我们要充分利用CPU的性能，尽可能地减少这种等待。
+
+<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><p>上面介绍的设备都隶属于硬件，而<b>操作系统</b>（Operating System, OS）属于是计算机的<b>系统软件</b>：可以直接控制硬件设备，同时为应用程序提供运行环境并给用户提供交互（不单是指GUI交互，有的OS没有GUI交互界面，只有CLI命令行交互环境）。</p>
+<h4 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h4><p>进程是计算机资源分配的最小单位。一般一个程序中会有多个进程，</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Operationg System</tag>
+        <tag>OS</tag>
       </tags>
   </entry>
   <entry>
