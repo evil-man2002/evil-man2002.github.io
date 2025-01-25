@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Linux是如何工作的</title>
+    <url>/2025/01/24/Linux%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</url>
+    <content><![CDATA[<h1 id="Linux是怎样工作的"><a href="#Linux是怎样工作的" class="headerlink" title="Linux是怎样工作的"></a><p align="center">Linux是怎样工作的</p></h1><p><b>by. &emsp;&emsp;[日]武内觉&emsp;&emsp;[译]曹栩</b></p>
+<p align="right"><b>——学习笔记</b></p>
+
+<p>&emsp;&emsp;<b>关于本学习笔记的介绍:</b></p>
+<p>&emsp;&emsp;本学习笔记按照《Linux是怎样工作的》这本书来记录学习心得，按照原书所分的八个章节进行，内容中涉及到的代码实验部分也会尽可能地复现和记录。本笔记的目的一方面是为了加深学习印象，尽可能地用自己的理解去记录知识，另一方面是为了便于后续的回顾，并敦促自己去学习。</p>
+<p>&emsp;&emsp;当然，学习过程中难免有理解错误的地方，还请有缘看到本笔记的人予以<a href="mailto:&#119;&#x6a;&#x68;&#x5f;&#x35;&#50;&#48;&#x40;&#115;&#x74;&#117;&#46;&#120;&#x69;&#100;&#x69;&#x61;&#x6e;&#46;&#x65;&#100;&#x75;&#46;&#x63;&#110;"><font color="red">勘误</font></a>，敬谢！</p>
+<h2 id="计算机系统概要"><a href="#计算机系统概要" class="headerlink" title="计算机系统概要"></a>计算机系统概要</h2><h3 id="计算机组成"><a href="#计算机组成" class="headerlink" title="计算机组成"></a>计算机组成</h3><p>首先，可以把计算机大致分为：<b>CPU、内存、外部设备</b>三种结构。外部设备简称为外设，不单单包括键盘、鼠标、显示器这些平时接触比较多的设备，还包括<b>外部存储器、网络适配器</b>这些设备。<span id="more"></span><br>在计算机体系结构中，越靠近CPU的设备，要求的速度和性能就越高，当然造价也越昂贵，这就导致内存、缓存这些靠近CPU的设备的存储规模不能过大（一方面过大会导致计算机的造价昂贵，另一方面会导致速度和性能的下降）否则就会拖累CPU的性能。</p>
+<p align="center"><font color="red">but why?</font></p>
+因为计算机在处理数据的过程中是一个：
+<p align="center">CPU从内存中取指令、译码、寻址、执行</p>
+<p align="center">把执行的结果重新写入内存</p>
+<p align="center">内存中的数据写入外存</p>
+<p align="center">通过网络适配器发给其他主机或者通过外部设备显示</p>
+循环往复的过程。像上楼梯一样，前面的人不走，后面的人就走不了。计算机的设备也是一样的道理，和CPU交互的设备响应速度如果很慢的话，CPU就要耗费性能去等待，这是不可以容忍的。因为CPU是不会停止工作的，不是说等待就可以把电源关闭停止耗能了，CPU的等待其实是在不断执行空操作nop。我们要充分利用CPU的性能，尽可能地减少这种等待。
+
+<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><p>上面介绍的设备都隶属于硬件，而<b>操作系统</b>（Operating System, OS）属于是计算机的<b>系统软件</b>：可以直接控制硬件设备，同时为应用程序提供运行环境并给用户提供交互（不单是指GUI交互，有的OS没有GUI交互界面，只有CLI命令行交互环境）。</p>
+<h4 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h4><p>进程是计算机资源分配的最小单位。一般一个程序中会有多个进程，</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Operationg System</tag>
+        <tag>OS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2025/01/24/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -27,51 +57,10 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux是如何工作的</title>
-    <url>/2025/01/24/Linux%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</url>
-    <content><![CDATA[<h1 id="Linux是怎样工作的"><a href="#Linux是怎样工作的" class="headerlink" title="Linux是怎样工作的"></a><p align="center">Linux是怎样工作的</p></h1><p><b>by. &emsp;&emsp;[日]武内觉&emsp;&emsp;[译]曹栩</b></p>
-<p align="right"><b>——学习笔记</b></p>
-
-<p>&emsp;&emsp;<b>关于本学习笔记的介绍:</b></p>
-<p>&emsp;&emsp;本学习笔记按照《Linux是怎样工作的》这本书来记录学习心得，按照原书所分的八个章节进行，内容中涉及到的代码实验部分也会尽可能地复现和记录。本笔记的目的一方面是为了加深学习印象，尽可能地用自己的理解去记录知识，另一方面是为了便于后续的回顾，并敦促自己去学习。</p>
-<p>&emsp;&emsp;当然，学习过程中难免有理解错误的地方，还请有缘看到本笔记的人予以<a href="mailto:&#x77;&#x6a;&#104;&#95;&#x35;&#x32;&#x30;&#64;&#x73;&#116;&#x75;&#x2e;&#120;&#105;&#100;&#x69;&#97;&#x6e;&#46;&#x65;&#100;&#117;&#x2e;&#x63;&#x6e;"><font color="red">勘误</font></a>，敬谢！</p>
-<h2 id="计算机系统概要"><a href="#计算机系统概要" class="headerlink" title="计算机系统概要"></a>计算机系统概要</h2><h3 id="计算机组成"><a href="#计算机组成" class="headerlink" title="计算机组成"></a>计算机组成</h3><p>首先，可以把计算机大致分为：<b>CPU、内存、外部设备</b>三种结构。外部设备简称为外设，不单单包括键盘、鼠标、显示器这些平时接触比较多的设备，还包括<b>外部存储器、网络适配器</b>这些设备。<span id="more"></span><br>在计算机体系结构中，越靠近CPU的设备，要求的速度和性能就越高，当然造价也越昂贵，这就导致内存、缓存这些靠近CPU的设备的存储规模不能过大（一方面过大会导致计算机的造价昂贵，另一方面会导致速度和性能的下降）否则就会拖累CPU的性能。</p>
-<p align="center"><font color="red">but why?</font></p>
-因为计算机在处理数据的过程中是一个：
-<p align="center">CPU从内存中取指令、译码、寻址、执行</p>
-<p align="center">把执行的结果重新写入内存</p>
-<p align="center">内存中的数据写入外存</p>
-<p align="center">通过网络适配器发给其他主机或者通过外部设备显示</p>
-循环往复的过程。像上楼梯一样，前面的人不走，后面的人就走不了。计算机的设备也是一样的道理，和CPU交互的设备响应速度如果很慢的话，CPU就要耗费性能去等待，这是不可以容忍的。因为CPU是不会停止工作的，不是说等待就可以把电源关闭停止耗能了，CPU的等待其实是在不断执行空操作nop。我们要充分利用CPU的性能，尽可能地减少这种等待。
-
-<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><p>上面介绍的设备都隶属于硬件，而<b>操作系统</b>（Operating System, OS）属于是计算机的<b>系统软件</b>：可以直接控制硬件设备，同时为应用程序提供运行环境并给用户提供交互（不单是指GUI交互，有的OS没有GUI交互界面，只有CLI命令行交互环境）。</p>
-<h4 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h4><p>进程是计算机资源分配的最小单位。一般一个程序中会有多个进程，</p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Operationg System</tag>
-        <tag>OS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>程序设计实践</title>
-    <url>/2025/01/24/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>程序设计</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日记-25-1-24</title>
-    <url>/2025/01/25/%E6%97%A5%E8%AE%B0-25-1-24/</url>
+    <title>日记-25-01</title>
+    <url>/2025/01/26/%E6%97%A5%E8%AE%B0-25-01/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="b23a29d3d12e565b144c86f512b353d0f44e1a9ca2e7bf63da2aee22dd5966e3">70eb2f456d8389f14dbb42b479e425c95ea3cf3259c7727f5ce4e4130c8be4227e6bf0fb593525197451d9b5e93829f7c3ad81f988453e351f51739ed6a8a29bd90ec418aef1d4c0a9e48988c64bc0ae87a3cc3f05e1cd7b60468959e849af601700e9abd00aed9e3e75033907dbe2e36e1d0fcb7c7428ce1c92e4dc942fe0d09dabd8bd0f64840dfa2fd7612a081a9990bb2d6a9fc9fe3e50f1ede257b8aec344b13ebe24e956007a7d6a35bab538d376ad650c946e102251f6e74b0cd7711b2274652dd139845830f8dd93b046a506be54613e1f1067472a19548d3dda6fb7c58129fc32da3b3dd794b96f717e31821d5c5ecab45644783e56a775f803797a3808e829c89a1067f1d9eb67f936a6e0404915c54058005be4606b81cb9bf4989482846be4591e18d69cfbe4c42f576d9fa21bc7c809df7ee5dc3951ef5a54c337172f43f2a458c89c9bdc6f9df050c0aed567b15032356b7941b3b381f31f3549e2cdc0104d0010f2f44b4dfd094d4ca1fbff5102962be813e2bf00573c4600124565fae519897ad75bdfe41a13e23c3abc84f60fe6ed7d9da18195f2336429a63237446673f71cc58cbe2d393202bc66b64ee2ca17ef222b63c01c38277fe822b88853f8308db6e4e6b441a734ecad6be46f58d5f8f433208248d1d405753ccd682d55a33306cb7a4447a4dea204ad285f0e5bcbb9d9b20fab7f2d9777b264ca099e991eb0ccec67df567fa255826b8637c77761f1c8e8220c849c1c2709d9c7f242532869ae03d5b0401007aa126d0f9924156cf9169029daa1b4cec597065e2067bf3606955c71ffe3eba97e48070883abf21da896e7a4a22aa37eab564460d32bfc35199a878cde7a1fc88cceaab41a2d69076ddd84067c7d5e47cf263b010e2e0f18c1dfff1a148bf7bbc211d9ca347a673f4deea8549ddab5e4944555f3f9c012339a046bcc321a41927dcc42f1dea7ce6179cf6dc77329f62aaef0affaa9b467429059f93de4238783ae4a7b2599bd48bfae550e1aeb9870211b2d47966426df34f93c049946ab8b1f4e11405aa0e32f0e0256819a2fd6a5372b13e4310d0de5c355cf339537a42eda48f4377a9587d9a85857846900c60f03ad0bbf7f5fdf1be36fde162fc095fcacfdf1eab366e3651ff33bab023682c9953a6da84aef1e89b9ba8b45520c8b9c30e259595d3e2083493d1762090a9a6d7feef41d16bee15ce546789128950ebb921f518031950e3a90aef64495b28424ebad0c8d5087be221cc70e7c35462805fb08024b33468c98f4b73ac2ed6c72a6e82c4f590eb6fef614aa41b974c321a4e89c2ee892eb5b82d5f0808ec891f02665caf2cab81767b87555ef707791236abf5963a1</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="02d5fe0c541f84661291efa5842fb6d419f4964e40972e1e575e6a5e9dd00a6c">70eb2f456d8389f14dbb42b479e425c9247a2f3c274be3601521577cf70f4ec1c57276a64f90760ff93ddc5b963453043763eb49fb27d0ee3d141c0f64cec7b3a790d433e02f910b00c03a383e7a933e775bbdeff2c534b13b81d44d4d19c7df1563c378f13b48ffe99d8d2fa6e6e83ce9be55d1513ac300f39ef81c822a85cb89cf3c4e82e5525b7eb16dad17f3ab2b02997b24b5702258ad7970fe1875cd6422f27da4623ec8f2e1af36ccfc73647e220cd5537e2f75c9f40bc59136275459e1c83bd0f87a044ad37e9ed766ab185e978a6c4c7df3fee52482a9df90824d944081625b56111dd4d34a8a68ee34f7a14488280ac88fed5678eec177e0c4fda0d98b67125c7c69f5e2e6613a33f5e51193777085bd69c2954d2c8d917cf89da1bca5c4c089ecb7beed56d73bf4ece4a5f70315a21e86fc710c5a101a37e001c0fc06ee13dbbb3877cacb71914f06913abf9c2489478eb7251a1645c27d5408ca5cbe54743914e87dceaa1f53a75bea2bcfd1c710001d7dd410dc7a72c55cb3a3b8e863965bdfabbb01e9016ca2eec2dca1c63e816625ccf9206f18fb47bb4a399680a880aaeb73ff358598c945ee948ad430a19b09ec7fcaf5038eaedbf2771441dc80f7d9b10c8169de7a8e21c127491d05e4f0d8c5ba7fc2762416bc9c0c3b97e9562a96b6ead1dda3cc210bcf58fb1da937951d036c05dc78fd5d7f651d9d0c4d12e79aa1ec2db48253775176d029844485833523ca956f9d634d69a4d8f3c6454f6baeea9565cb4f01194be0723246864dd1f2c47578f1d7d9c43115249c92dfbd99a7d0008b040256866cfb3bc1a413d8f10daa9267b828d7d48be1fa430679bbb5f34842527d4e72915f71a4ce6675c3a6816d9137fbf352ee5a2c223811af623aee9f2bfabd26695b1ec7d00c3c97990d5f2fe91ec7de51de9d9e77f53cf1f032619768c9f83c39015306ad1f8a05418a0bf979e3c66b7851b540eafa3ee5a8d95f2c782b6667efbfceffa106d6f4eb48ef6f96a54cf68655cd43fc9e27d0236f31f89e23649ca0b559ee5b0b1c55987e01ed33515bc33d1cc93ce61b62515d960779a09e3ef662b24644b6350aa380e35fb37f5b5d0d5621cccdc01fb1c5d1cc75b4d07a5bd80695372509e45c6f48262faa4957b7e7b93dcd0dbaa9686c3189f0c0f4c42fde354c19dc87a16c6b5abcb748543e7349ff53fa75c3b41c1e950d24d6bc22ea821034dd8eb0bbb09a3165af58d5c77038ec82b18b0ab96d5b6573b99ca1123c7cd5be7bd6324badbb2b79e0e51983b5fee014a49105a470d53f14f8aa0f8bbbe5b61dba7a22ff31fcbc12d76662d075d6f3a32664dc5e5376791762d359ff7cb0298f7e2637ea82df2d5b1da577f4ccdf1a0aee5dff80b929b43d2471d1290ebbdeda6e863f77c72a4de642a75684401e7d53fdf263c15c81a0278520f9cd2a7e8520125201a4ecb9f8956ac898408299baeec6d0ee35900c34b1f8d59b24711799ddaef113b84997adf28dfb10f5614baacdf95d5912bfc244a7acdd57ba55c5652a2eef40b69d896a12a7f0455d459fcb851bc76d454c3ba81339a0774ebfc63b85e34612819020d33f2b363d5309b407d07096c912f23affad3ae200f61124c4136cc313204a773e726aa6db58d6043858214dba99b6701471d8158117660fb3e3f4706ce4ded5c61e0178498e04b9105a85eadd5f8d040526366ac00cb7ef2a3f1679f10b422d61d1bdcc74c1b6711e2cfdbd144cf8c8a96a78ff72aa14182d2a2b76250de3fef0855f9d9f13109db89792133681aff3d5f8b625a51f7ab9704098fef23fc862b2613be1990e1722901cd060f04e468849813dd5c28c3d53c6e5bb56d65071d7461771e2d49e170abbdb7ef0282b3b49ebd4aafc4627468c5aa7adfc5b50e1c89030e8d5d623885df8b1c6c40bd5028f95caa7663e5222855129093b6c520e1d14ba4e87bc8b087cd5ba572e400d9d39e13400093270b8c693e62d52fc360971687de2040702846b000e07856e6865b662388a7193543b90f4313c02abd07bfeb36c7aebd8a751ed5460dd7d688521075df6bc19553ace6799ef01f822a50f177d0bd8df421bbed5ffd84b779e19b3498e9c0f8cca16fb73195350ed1dd012967580f36c7faf43037e011db387bd1c5f67a3f0064e53b88fc4e9a6550ad50319b7714420ddfb93e0e965fd6c664b3574ba4c76c3c631cb505f85105dec350161d3ae64a49b0d230edd6f23fbdabf2958610e174d013d44fd493abe242930a460b27d694e37e9969529c02e2d0ae4929f4cb8b270813c3504e55085b7d5b725ef59b60f16508fc9512e17d054ed7dfebf1aa4009a88d7ac4533146faeb35635cd4f0b9a84617cd50b3e5b5a17a3c36a4b04e30b2c4342cd8ad1df00c6f562c2e427f888b16f5805df93998f8ed85b95fd95db9aa900cd6142cb5243d4c4327355fff5fb2c266763d35a2fba9262df36d5e106c69e41090fda65abe07414de27ee27cca6e6d004d01d942af3067c14c8e2009daee27248e6c99e780d6d2f5adf9332afeab70f11ddcb936f190910711e24485e667ceb10c2e2f7420252f1b3db79d1f79134bda593c9d55e0820281486ba1bb027ae21756152104cc466f66c729c274c5666c16fa7c5d3a34aaca38bcfc8392301e00e5d7dab12136d113f1bf810dea3d55aed188f15bf400aab9e9fad2c50a704f40190ff9d68081f7b7b99f35c3be6953b50a41dc55d5bed9432ffade2b472af998fb93807fc6ed53102a9faba041583fb4d9503c257c218945e048f4e4423f9d54ca445d17ac5fb13abe97631e9df8c689a2f75e7e7249d2a5d04e986dd5f2dabed90dab29e256fc1251aebacd9200aea4735898b04ee64267a519d9deb61d2bcf77a121bb279393d9c54835f04e317f63cf60c34e8217f07c5ef018732e57b5cf2ea335614f7f2f1b4e6c9ec21564ae24db9f28c63ab7cb8125d07fcdf8c6b40a068e55c83143f0c659b252a3cb299c2de690fa9d2e27d27436ec6fc9c28e1eec717099df6ec3a52ddff10210f06c06bb5214fa9699f77283b6ad7ddc7cb46d885812fc972dca6bcee4015edc4f66145121b67eaa148ed3278281556608a84af8a05c9de5af384fec169</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -110,6 +99,40 @@
       </categories>
       <tags>
         <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记-25-1-24</title>
+    <url>/2025/01/25/%E6%97%A5%E8%AE%B0-25-1-24/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="b23a29d3d12e565b144c86f512b353d0f44e1a9ca2e7bf63da2aee22dd5966e3">70eb2f456d8389f14dbb42b479e425c95ea3cf3259c7727f5ce4e4130c8be4227e6bf0fb593525197451d9b5e93829f7c3ad81f988453e351f51739ed6a8a29bd90ec418aef1d4c0a9e48988c64bc0ae87a3cc3f05e1cd7b60468959e849af601700e9abd00aed9e3e75033907dbe2e36e1d0fcb7c7428ce1c92e4dc942fe0d09dabd8bd0f64840dfa2fd7612a081a9990bb2d6a9fc9fe3e50f1ede257b8aec344b13ebe24e956007a7d6a35bab538d376ad650c946e102251f6e74b0cd7711b2274652dd139845830f8dd93b046a506be54613e1f1067472a19548d3dda6fb7c58129fc32da3b3dd794b96f717e31821d5c5ecab45644783e56a775f803797a3808e829c89a1067f1d9eb67f936a6e0404915c54058005be4606b81cb9bf4989482846be4591e18d69cfbe4c42f576d9fa21bc7c809df7ee5dc3951ef5a54c337172f43f2a458c89c9bdc6f9df050c0aed567b15032356b7941b3b381f31f3549e2cdc0104d0010f2f44b4dfd094d4ca1fbff5102962be813e2bf00573c4600124565fae519897ad75bdfe41a13e23c3abc84f60fe6ed7d9da18195f2336429a63237446673f71cc58cbe2d393202bc66b64ee2ca17ef222b63c01c38277fe822b88853f8308db6e4e6b441a734ecad6be46f58d5f8f433208248d1d405753ccd682d55a33306cb7a4447a4dea204ad285f0e5bcbb9d9b20fab7f2d9777b264ca099e991eb0ccec67df567fa255826b8637c77761f1c8e8220c849c1c2709d9c7f242532869ae03d5b0401007aa126d0f9924156cf9169029daa1b4cec597065e2067bf3606955c71ffe3eba97e48070883abf21da896e7a4a22aa37eab564460d32bfc35199a878cde7a1fc88cceaab41a2d69076ddd84067c7d5e47cf263b010e2e0f18c1dfff1a148bf7bbc211d9ca347a673f4deea8549ddab5e4944555f3f9c012339a046bcc321a41927dcc42f1dea7ce6179cf6dc77329f62aaef0affaa9b467429059f93de4238783ae4a7b2599bd48bfae550e1aeb9870211b2d47966426df34f93c049946ab8b1f4e11405aa0e32f0e0256819a2fd6a5372b13e4310d0de5c355cf339537a42eda48f4377a9587d9a85857846900c60f03ad0bbf7f5fdf1be36fde162fc095fcacfdf1eab366e3651ff33bab023682c9953a6da84aef1e89b9ba8b45520c8b9c30e259595d3e2083493d1762090a9a6d7feef41d16bee15ce546789128950ebb921f518031950e3a90aef64495b28424ebad0c8d5087be221cc70e7c35462805fb08024b33468c98f4b73ac2ed6c72a6e82c4f590eb6fef614aa41b974c321a4e89c2ee892eb5b82d5f0808ec891f02665caf2cab81767b87555ef707791236abf5963a1</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>日记</category>
+      </categories>
+      <tags>
+        <tag>bad luck</tag>
+        <tag>salary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>程序设计实践</title>
+    <url>/2025/01/24/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%AE%9E%E8%B7%B5/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>程序设计</tag>
       </tags>
   </entry>
 </search>
